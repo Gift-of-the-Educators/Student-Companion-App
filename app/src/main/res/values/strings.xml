@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Gift of the Educators</string>
+
+    <string name="mission">
+        To provide high-quality, insightful tutoring at a low cost to those who can afford it,
+        who will in turn perform community service, as those funds will allow for impoverished students to attend the same tuition.
+        Tutoring will be provided in a safe, comfortable environment,
+        wherein tutors will strive to establish interpersonal relationships with all students.
+        The company will make a significant difference in the academic lives of students,
+        whilst allowing employees to pursue their passions of making a difference in society
+    </string>
+
+    <string name="vision">
+        To become the most impacting, empathetic and trustworthy non-profit tutoring company in South Africa
+        to the extent that opportunities are provided and futures are formed for those who were never able to afford them.
+    </string>
+
+    <string name="values">
+        Our purpose is to develop students irrespective of their status.
+        Individuals are inherently good and wish to make an impact in society but do not know how to.
+        By funding the education of your child, you will be funding the education of a student that cannot afford it.
+        Tutoring is not only for short-term retention but rather long-term investment.
+        Therefore, the organisation intends to build meaningful connections with all students to alleviate academic difficulties whilst simultaneously focusing on unity despite their background.
+        With your buy-in, we can collectively improve the education and living standards in South Africa for every student.
+    </string>
+
+    <string name="long_term_goals">
+        \u2022 To ensure that the organisation is sustainable \n
+        \n
+        \u2022 To improve the lives of all our students by assisting them in pursuing their dreams and achieving the Matric results that they desire \n
+        \n
+        \u2022 To create a memorable and trustworthy presence in the industry, one which is not purely concerned with the monetary aspect of business
+    </string>
+
+    <string name="short_term_goals">
+        \u2022 To ensure that there is a balance in each class, specifically 10 paying students and 10 underprivileged students \n
+        \n
+        \u2022 To ensure that students achieve some form of academic improvement based on the student \n
+        \n
+        \u2022 To ensure that a team of tutors that wish to serve is established
+    </string>
+</resources>

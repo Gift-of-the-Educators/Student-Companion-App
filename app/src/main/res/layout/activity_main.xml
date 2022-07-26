@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/MainHomeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#302C2C"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AppBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/righteous"
+        android:text="Welcome to Gift of the Educators"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lblSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/open_sans_semibold"
+        android:text="Student Companion App"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/NavigationCard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        app:cardBackgroundColor="#3C3535"
+        app:cardCornerRadius="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/NavigationLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/ConstraintDivider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#3C3535"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnWellbeing"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Wellbeing\nExercises"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ConstraintDivider"
+                app:layout_constraintTop_toBottomOf="@+id/btnCalendar" />
+
+            <Button
+                android:id="@+id/btnCalendar"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Calender"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnWellbeing"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ConstraintDivider"
+                app:layout_constraintTop_toBottomOf="@+id/btnAPS" />
+
+            <Button
+                android:id="@+id/btnAPS"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="APS\nCalculator"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnCalendar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ConstraintDivider"
+                app:layout_constraintTop_toBottomOf="@+id/btnRecorded" />
+
+            <Button
+                android:id="@+id/btnForums"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Forums"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/ConstraintDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnQuizzes" />
+
+            <Button
+                android:id="@+id/btnYoutube"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Youtube\nVideos"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnQuizzes"
+                app:layout_constraintEnd_toStartOf="@+id/ConstraintDivider"
+                app:layout_constraintHorizontal_bias="0.489"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnPastPapers" />
+
+            <Button
+                android:id="@+id/btnPastPapers"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Past\nPapers"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnYoutube"
+                app:layout_constraintEnd_toStartOf="@+id/ConstraintDivider"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnQuizzes"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Quizzes"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnForums"
+                app:layout_constraintEnd_toStartOf="@+id/ConstraintDivider"
+                app:layout_constraintHorizontal_bias="0.492"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnYoutube" />
+
+            <Button
+                android:id="@+id/btnRecorded"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/open_sans_semibold"
+                android:text="Recorded\nSessions"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:cornerRadius="32dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnAPS"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ConstraintDivider"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
