@@ -2,6 +2,8 @@ package com.gote.giftoftheeducators;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,12 +23,20 @@ import org.json.JSONObject;
 
 public class YoutubeActivity extends YouTubeBaseActivity {
 
-    String api_key = "AIzaSyA8hdPxkSlaFFr9XDWa8g8CP7kB5JnPyGo";
+    String api_key;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_youtube_video_list);
+
+        ApplicationInfo appInfo = null;
+        try {
+            appInfo = getPackageManager().getApplicationInfo(getPackageName(), PackageManager.GET_META_DATA);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        api_key = appInfo.metaData.getString("youtubeAPIKey");
 
         SharedPreferences preferences = getSharedPreferences("UserPrefs", this.MODE_PRIVATE);
         initialize(preferences.getString("mode", "light"));
